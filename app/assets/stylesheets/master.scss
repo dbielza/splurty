@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 .clear {
   clear: both;
@@ -50,4 +51,24 @@ header {
 
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.links a {
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
 }
