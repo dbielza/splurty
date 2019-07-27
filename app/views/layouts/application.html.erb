@@ -43,9 +43,15 @@
 
     <div class="footer">
       <div class="container">
+          <% if flash[:error].present? %>
+    <div class="col-10 offset-1 alert alert-danger">
+      <%= flash[:error].html_safe %>
+    </div>
+  <% end %>
+</div>
         <div class="row">
                 <div class="col-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
       <div class="col-6 footer-blurb">
         Proudly hacked by <a href="[YOUR_PORTFOLIO_URL]">Daniel Bielza</a><br />
